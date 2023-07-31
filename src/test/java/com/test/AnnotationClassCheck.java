@@ -15,7 +15,7 @@ public class AnnotationClassCheck {
 		@Test(priority=1, groups = {"Sanity"} , timeOut=2000 , dependsOnMethods= {"LoginSteps"})
 		public void checkLogin(String url1) {
 			//driver = new ChromeDriver();
-			System.out.println("check login page");
+			System.out.println("check login page...");
 			driver.get(url1);
 			
 		}
@@ -33,7 +33,7 @@ public class AnnotationClassCheck {
 			driver.get(url);
 			
 			Thread.sleep(2000);
-			System.out.println("inside the login steps");
+			System.out.println("inside the login steps..");
 			
 			//driver.quit();
 			
