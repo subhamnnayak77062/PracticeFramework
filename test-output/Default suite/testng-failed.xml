@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.ScreenshotOnFailure">
+      <class name="com.test.TestClassCheck">
         <methods>
-          <include name="startBrowser"/>
-          <include name="onTestFailure"/>
-          <include name="exampleTest"/>
+          <include name="LoginSteps"/>
+          <include name="openDriver"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.test.ScreenshotOnFailure -->
+      </class> <!-- com.test.TestClassCheck -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

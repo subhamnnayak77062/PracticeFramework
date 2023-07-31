@@ -16,12 +16,12 @@ public class DriverCheck {
 		public static void main(String[] args) {
 			
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless=new");
-			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-			List<String> extensions = new ArrayList<String>();
-			extensions.add("");
+			//options.addArguments("--headless=new");
+			//options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+			//List<String> extensions = new ArrayList<String>();
+			//extensions.add("");
 			
-			options.addExtensions(Arrays.asList());
+			//options.addExtensions(Arrays.asList());
 			
 			driver = new ChromeDriver(options);
 			
@@ -32,8 +32,8 @@ public class DriverCheck {
 			System.out.println(driver.getTitle());
 			
 			
-			//driver.quit();
-			driver.close();
+			driver.quit();
+			//driver.close();
 		}
 		
 	
